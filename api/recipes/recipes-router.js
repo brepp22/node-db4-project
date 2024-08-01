@@ -1,6 +1,6 @@
 const router = require('express').Router()
 
-router.use('*' , (req, res) => {
+router.use('*' , (req, res, next) => {
     res.json({api : 'up'})
 })
 
